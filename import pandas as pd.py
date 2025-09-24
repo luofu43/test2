@@ -139,22 +139,6 @@ def main():
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(f"""# 线性回归模型训练项目
 
-### 项目描述
-完成y=wx+b线性回归模型的训练，分析权重w、偏置b与损失函数loss之间的关系。
-
-### 实现功能
-1. 使用pandas读取train.csv数据
-2. 实现梯度下降算法训练线性回归模型
-3. 绘制w-loss、b-loss关系图
-4. 可视化训练过程和结果
-
-### 文件说明
-- `linear_regression.py`: 主程序文件
-- `train.csv`: 训练数据
-- `training_results.csv`: 训练过程记录
-- `linear_regression_results.png`: 结果可视化图
-
-### 运行结果
 - 最终权重 w: {model.w:.4f}
 - 最终偏置 b: {model.b:.4f}
 - 最终损失: {model.loss_history[-1]:.4f}
@@ -165,7 +149,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# git_config.py - Git提交配置脚本
 import subprocess
 import os
 
